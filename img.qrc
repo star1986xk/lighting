@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="新前缀">
+    <file>img/下箭头.png</file>
+    <file>img/关闭.png</file>
+    <file>img/关闭1.png</file>
+    <file>img/bg.jpg</file>
+  </qresource>
+</RCC>

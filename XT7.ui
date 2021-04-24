@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow7</class>
+ <widget class="QMainWindow" name="MainWindow7">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>651</width>
+    <height>490</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget{
+border-image: url(:/新前缀/img/bg.jpg);
+}
+
+QPushButton{
+padding:2px 2px 2px 2px;
+background-color: rgba(255,255,255,100);
+border-style:none;
+border-radius: 5px;
+color:#ffffff;
+}
+
+QPushButton:hover{
+padding:2px 2px 2px 2px;
+background-color: rgba(220, 220, 220,200);
+border-radius: 5px;
+}
+
+QPushButton:pressed {
+	padding:2px 2px 2px 2px;
+    /* 改变背景色 */  
+    background-color:rgba(180, 180, 180,100);  
+    /* 改变边框风格 */  
+    border-style:inset;  
+    /* 使文字有一点移动 */
+    padding-left:1px;
+    padding-top:1px;
+	border-radius: 5px;
+}
+
+QLineEdit{
+background-color: rgba(255, 255, 255,120);
+border: 1px solid #000000;
+border-radius:3px;
+color:#ffffff;
+padding-left: 5px;
+}
+QLineEdit:hover
+{
+	border:1px solid rgba(31,156,220) ;
+}
+QTableWidget{
+	background-color:rgba(180, 180, 180,200); 
+color:#ffffff;
+}
+QHeaderView{
+	background-color:rgba(180, 180, 180,200);      
+}
+
+QHeaderView::section{
+border:none;
+border-right:1px solid rgba(0,0,0,100);
+background-color:rgba(180, 180, 180,200);  
+color:#ffffff;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="LE71">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="PB7ss">
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>80</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>搜索</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="PB7tc">
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>80</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>退出</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <column>
+       <property name="text">
+        <string>日期</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>新建列</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>故障原因</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>新建列</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>负责人</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
